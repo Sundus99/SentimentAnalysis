@@ -17,25 +17,8 @@ url_suffix = "&pageNumber={}"
 complete_url1 = url_base+url_suffix
 complete_url2 = url_base2+url_suffix
 #input("Please input url of the reviews section and paste the link. \n Please ensure that the url ends with all_reviews only")
-headers = {
-    'authority': 'www.amazon.ca',
-    'cache-control': 'max-age=0',
-    'rtt': '50',
-    'downlink': '10',
-    'ect': '4g',
-    'sec-ch-ua': '" Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"',
-    'sec-ch-ua-mobile': '?0',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-    'service-worker-navigation-preload': 'true',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-user': '?1',
-    'sec-fetch-dest': 'document',
-    'accept-language': 'en-US,en;q=0.9',
-    'cookie': 'session-id=133-4548374-9254757; session-id-time=2082787201l; i18n-prefs=CAD; csm-hit=tb:s-4KYRXX4VSB2GCMWJW44G|1625223250928&t:1625223251128&adb:adblk_no; ubid-acbca=130-8386097-3687639; session-token=H1JSG5VdL9GSl8+76AsGxgu6SMGNNO0to6nN0tjijfropmdHjIrkvzlpKeu0LJ8OeZ9gaGqvA2kwJ3Whdx8CG4wTvXuHJgnDecqaMRI/coyEWszbC7OGIJ57FZ1ep6WiXi2lfd1FLSh5tcWg4tTgM28M34km2Op9MajCvcPbQy5J4ZTHKRr/TgjTO20V2Ga1nAMq6vgCPPSSz558CX6vafI5H/xARLNB8iNM0dB+9VRv9x92DNa7p2x2Tq+xvKBdu77R/8+BiMc=',
-}
+
+#========================insert header here
 
 def get_soup(url, headers):
 	r = requests.get(url,headers=headers)
